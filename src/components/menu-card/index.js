@@ -4,11 +4,13 @@ import logo from '../../assets/samplelogo.png'
 import beans from '../../assets/beans.png'
 import artic from '../../assets/artichoke.png'
 import arrow from '../../assets/arrow.png'
+import bag from '../../assets/bag.png'
+import Corn from '../../assets/corn.png'
 import Slider from "../slider/Slider";
 import CustomAcordianToggle from "../accordian/AcordianToggle";
 
 
-const flavours = [{image:beans,name:"choclate"},{image:artic,name:"peanut"},{image:artic,name:"peanut"},{image:artic,name:"peanut"}] ;
+const flavours = [{image:beans,name:"choclate"},{image:artic,name:"peanut"},{image:bag,name:"peanut"},{image:Corn,name:"Corn"}] ;
 
 class MenuCard extends Component {
 
@@ -74,7 +76,7 @@ class MenuCard extends Component {
                             </div>
                             <div>
                                 <div style={{padding:"0 40%"}} className="li-icon-container">
-                                    <img src={beans} alt={logo} className="li-icon"/>
+                                    <img src={bag} alt={logo} className="li-icon"/>
                                 </div>
                             </div>
 
