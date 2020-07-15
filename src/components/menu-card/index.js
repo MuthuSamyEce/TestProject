@@ -16,11 +16,9 @@ class MenuCard extends Component {
 
     onChangeSlider = (e) =>{
 
-    }
-
+    };
 
     displayItems = () => {
-
         return   flavours.map((item,index) => {
             return (
                 <div className="li-icon-container" key={index}>
@@ -29,7 +27,6 @@ class MenuCard extends Component {
                 </div>
             )
         })
-
     };
 
     render() {
