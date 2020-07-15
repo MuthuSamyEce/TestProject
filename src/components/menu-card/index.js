@@ -46,7 +46,6 @@ class MenuCard extends Component {
                                 <span className="sub-head-2">{`|`}</span>
                                 <span className="sub-head-2">{`ABV 8.5% `}</span>
                                 <span className="sub-head-2">{`|`}</span>
-
                             </div>
                         </Col>
                         <Col  xs={6} sm={3} lg={3} md={3}>
@@ -57,7 +56,6 @@ class MenuCard extends Component {
                                 {this.displayItems()}
                             </div>
                         </Col>
-
                         <Col xs={3} sm={3} lg={3} md={3}>
                             <div>
                                 <span className="small-heading">Bitterness: Low to No</span>
@@ -66,7 +64,6 @@ class MenuCard extends Component {
                                <Slider onSlide={this.onChangeSlider}/>
                             </div>
                         </Col>
-
                         <Col  xs={1} sm={1} lg={1} md={1}>
                             <div>
                                 <span className="small-heading"> Color </span>
@@ -76,14 +73,12 @@ class MenuCard extends Component {
                                     <img src={bag} alt={logo} className="li-icon"/>
                                 </div>
                             </div>
-
                         </Col>
                     </Row>
                 <Row className="zero-m-p">
                     <Col xs={6} sm={4} lg={4} md={4} style={{textAlign:"left",overflow:"hidden"}}>
                         <div>
                             <span className="card-desc">highly roasted, mahogany-coloured, medium-bodied malt with a sweet, salted caramel flavour...</span>
-
                         </div>
                     </Col>
                     <Col>
@@ -103,7 +98,6 @@ class MenuCard extends Component {
                             </Accordion.Collapse>
                         </Accordion>
                     </Col>
-
                 </Row>
             </div>
         );
