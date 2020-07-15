@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="18" viewBox="0 0 118 18">
+    <defs>
+        <linearGradient id="prefix__a" x1="27.7%" x2="100%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#C3E253"/>
+            <stop offset="100%" stop-color="#4D5A31"/>
+        </linearGradient>
+        <ellipse id="prefix__c" cx="9.254" cy="8.949" rx="9.212" ry="8.949"/>
+        <filter id="prefix__b" width="176%" height="200.6%" x="-38%" y="-50.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0"/>
+            <feOffset dy="-2" in="SourceAlpha" result="shadowOffsetOuter2"/>
+            <feGaussianBlur in="shadowOffsetOuter2" result="shadowBlurOuter2" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter2" result="shadowMatrixOuter2" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.03 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="shadowMatrixOuter2"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none">
+        <path fill="url(#prefix__a)" d="M0 17.102L116.908 17.102 116.908 1.809z"/>
+    </g>
+</svg>
