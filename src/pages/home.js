@@ -29,14 +29,14 @@ const product = {
     "allergyWarnings": "allergyWarnings",
     "productID": "4e0174d8-caac-11ea-9c56-ea8c41bbdb13",
     "productName": "512 Pecan Porter"
-}
+};
 
 class Home extends Component {
 
 
 state = {
     products:[]
-}
+};
 
     componentDidMount() {
         axios({
