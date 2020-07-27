@@ -14,6 +14,9 @@ const flavours = [{image:beans,name:"choclate"},{image:artic,name:"peanut"},{ima
 
 class MenuCard extends Component {
 
+
+    drink = this.props.drink;
+
     onChangeSlider = (e) =>{
 
     };
@@ -38,13 +41,13 @@ class MenuCard extends Component {
                                 <img alt={"logo"} className="cardImg" src={logo}/>
                             </div>
                             <div style={{display:"inline-block",padding:"0 10px",verticalAlign:"top"}}>
-                                <span className="main-head">{"512 Pecan Porter"}</span>
+                                <span className="main-head">{this.drink.productName}</span>
                                 <span className="sub-head">{"512 Brewing - Austin, TX"}</span>
-                                <span className="sub-head-2">{`HAZY IPA`}</span>
+                                <span className="sub-head-2">{`HAZY ${this.drink.IBU}`}</span>
                                 <span className="sub-head-2">{`|`}</span>
-                                <span className="sub-head-2">{`IBU 8 `}</span>
+                                <span className="sub-head-2">{`IBU ${this.drink.IBU}`}</span>
                                 <span className="sub-head-2">{`|`}</span>
-                                <span className="sub-head-2">{`ABV 8.5% `}</span>
+                                <span className="sub-head-2">{`ABV ${this.drink.ABV} `}</span>
                                 <span className="sub-head-2">{`|`}</span>
                             </div>
                         </Col>
@@ -58,7 +61,7 @@ class MenuCard extends Component {
                         </Col>
                         <Col xs={3} sm={3} lg={3} md={3}>
                             <div>
-                                <span className="small-heading">Bitterness: Low to No</span>
+                                <span className="small-heading">{`Bitterness: ${this.drink.perceivedBitterness}`}</span>
                             </div>
                             <div style={{padding:"15px 0 0 0"}}>
                                <Slider onSlide={this.onChangeSlider}/>
@@ -78,7 +81,7 @@ class MenuCard extends Component {
                 <Row className="zero-m-p">
                     <Col xs={6} sm={4} lg={4} md={4} style={{textAlign:"left",overflow:"hidden"}}>
                         <div>
-                            <span className="card-desc">highly roasted, mahogany-coloured, medium-bodied malt with a sweet, salted caramel flavour...</span>
+                            <span className="card-desc">{this.drink.productDescription}</span>
                         </div>
                     </Col>
                     <Col>
